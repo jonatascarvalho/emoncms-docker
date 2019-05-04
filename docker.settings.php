@@ -3,15 +3,15 @@
 // Docker Emoncms Settings
 
 //1 #### Mysql database settings
-    $server   = $_ENV["MYSQL_HOST"];
-    $database = $_ENV["MYSQL_DATABASE"];
-    $username = $_ENV["MYSQL_USER"];
-    $password = $_ENV["MYSQL_PASSWORD"];
+    $server   = $_ENV["gke-nginx-1-cluster-default-pool-45942c3f-91mn"];
+    $database = $_ENV["DB_EMONCMS"];
+    $username = $_ENV["USER_EMONCMS"];
+    $password = $_ENV["4fx3mpq];
     $port     = "3306";
 
     // Skip database setup test - set to false once database has been setup.
-    $dbtest = true;
-
+    //$dbtest = true; comentado por jonatas em 04/05/2019
+	$dbtest = false;
 
 //2 #### Redis
     // Note that boolean values need to be coerced into 'real' booleans from their string values
